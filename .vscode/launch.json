@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Experiment",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=${workspaceFolder}/experiment/Cargo.toml",
+                    "--bin=experiment",
+                    "--package=experiment"
+                ]
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/experiment",
+            "program": "${workspaceFolder}/experiment/target/debug/experiment",
+            "env": {
+                "RUST_BACKTRACE": "1"
+            }
+        }
+    ]
+}
